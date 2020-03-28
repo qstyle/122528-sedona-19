@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dmitry Ordin](https://up.htmlacademy.ru/adaptive/19/user/122528).
-* Наставник: `Неизвестно`.
+* Наставник: [Yaroslav Kosovych](https://htmlacademy.ru/profile/id703025).
 
 ---
 
