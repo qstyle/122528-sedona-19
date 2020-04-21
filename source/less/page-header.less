@@ -1,0 +1,107 @@
+@media (min-width:@mobileMin) {
+  .page-header {
+    font-family: @PTnormal;
+    font-weight: bold;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  .page-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-nav {
+    position: relative;
+    z-index: 2;
+  }
+
+  .page-nav__button--off {
+    border: none;
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    width: 23px;
+    height: 4px;
+    background-color: @blue;
+    fill: @blue;
+    box-shadow: 0px 8px 0 0 @blue, inset 0px 4px 0 0 @blue, 0px 16px 0 0 @blue, inset 0px 4px 0 0 @blue;
+  }
+
+  .page-nav__button--on {
+    position: absolute;
+    right: 38px;
+    top: 27px;
+    border: none;
+
+    &::after,
+    &::before {
+      content: '';
+      width: 28px;
+      height: 4px;
+      background-color: black;
+      border: none;
+      position: absolute;
+      border: none;
+      background-color: white;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+
+
+  .nav-list__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 2.22;
+    text-align: center;
+  }
+
+  .page-nav__list {
+    position: relative;
+    z-index: 2;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .nav-list__item a {
+
+    background-color: @blue;
+    box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0, 2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      background-color: @blueHover;
+    }
+
+    &:active {
+
+      background-color: @blueActive;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+
+  .page-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+  }
+}

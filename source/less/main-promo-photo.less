@@ -1,0 +1,56 @@
+
+.main-promo-photo{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 178px;
+    z-index: -1;
+  justify-content: center;
+  align-items: center;
+background-image: url('/img/back-mobile-jpg.jpg');
+margin-top: -28px;
+}
+.main-promo-photo_image{
+ width:229px ;
+ height: auto;
+}
+.main-promo-photo::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 68px;
+  background-color: white;
+  z-index: 2;
+  left: 50%;
+  bottom: -9.5%;
+  transform: rotate(-9deg);
+  overflow: hidden;
+}
+
+.main-promo-photo::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 68px;
+  background-color: white;
+  z-index: 2;
+  right: 50%;
+  bottom: -9.5%;
+  transform: rotate(9deg);
+  overflow: hidden;
+}
+.block-photo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid grey;
+  }
+  .block-photo__image{
+    display: flex;
+width: auto;
+
+    height: auto;
+    margin-top: 22px;
+    margin-right: 20px;
+    margin-left: 20px;
+         }
