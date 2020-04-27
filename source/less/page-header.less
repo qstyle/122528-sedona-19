@@ -84,3 +84,43 @@
   justify-content: center;
   z-index: 2;
 }
+
+@media (min-width:768px) {
+  .page-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-logo {
+    position: absolute;
+    top: 0;
+    left: 43%;
+  }
+
+  .nav-list__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    min-width: 153px;
+    height: 41px;
+    font-size: 14px;
+  }
+
+  .nav-list__item {
+    list-style: none;
+  }
+
+  .nav-list__item:nth-child(3) {
+    margin-left: 20%;
+  }
+
+  .page-nav__wrapper {
+    background-color: white;
+  }
+
+  .page-nav__button--off {
+    display: none;
+  }
+}
