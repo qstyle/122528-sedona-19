@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
-  
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <section class="page-nav">
-      <button type="button" class="page-nav__button"></button>
+      <button type="button" class="page-nav__button page-nav__button--off"></button>
       <div class="page-nav__wrapper">
         <nav class="page-nav__list-link">
           <ul class="page-nav__list nav-list">
-            <li class="nav-list__item"><a href="#">ГЛАВНАЯ</a></li>
+            <li class="nav-list__item"><a href="index.html">ГЛАВНАЯ</a></li>
             <li class="nav-list__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
             <li class="nav-list__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
             <li class="nav-list__item"><a href="#">HTML ACADEMY</a></li>
@@ -23,37 +23,43 @@
         </nav>
       </div>
     </section>
-    <a href="#"><img src="#" alt="логотип 'Седона'" width="102" height="83"></a>
+    <div class="page-logo">
+      <a href=""><img class="page-logo__image" src="../img/logotyle-mobile-svg.png" alt="логотип "Седона""></a>
+    </div>
   </header>
   <main class="page-main">
     <section class="main-promo">
       <h1 class="visually-hidden">Седона</h1>
-      <img src="#" alt="Логотип Седона" class="main-promo__image " width="281" height="214">
+      <img src="../img/text-index-svg.png" alt="Логотип Седона" class="main-promo__image " width="281" height="214">
     </section>
     <section class="main-content">
-      <h2 class="content-heading">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+      <h2 class="content-heading__heading">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
       <p class="main-content__advantage">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <ul class="advantage-list">
+      <ol class="advantage-list">
         <li class="advantage-list__list">
           <h3 class="advantage-list__heading">Настоящий городок</h3>
           <p class="advantage-list__number">- №1 -</p>
           <p class="advantage-list__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-          <img src="#" alt="Фото гостиницы" width="320" height="260">
+          <img src="/img/photo-city-1-x.png" alt="Фото гостиницы" width="320" height="260"
+            class="advantage-list__image">
           <ul class="advantage-list__sublist">
             <li class="advantage-list__advantage">
-              <img src="#" alt="Иконка Жилье" class="advantage-list__advantage-icon" width="37" height="36">
+              <img src="/img/icon-house-svg.png" alt="Иконка Жилье" class="advantage-list__advantage-icon" width="37"
+                height="36">
               <h4 class="advantage-list__advantage-heading">ЖИЛЬЕ</h4>
               <p class="advantage-list__advantage-description">Рекомендуем пожить в настоящем мотеле, все как в кино!
               </p>
             </li>
             <li class="advantage-list__advantage">
-              <img src="#" alt="Иконка сувениры" class="advantage-list__advantage-icon" width="32" height="38">
+              <img src="/img/icon-gift-svg.png" alt="Иконка сувениры" class="advantage-list__advantage-icon" width="32"
+                height="38">
               <h4 class="advantage-list__advantage-heading">СУВЕНИРЫ</h4>
               <p class="advantage-list__advantage-description">Не только китайского, но и местного производства!
               </p>
             </li>
             <li class="advantage-list__advantage">
-              <img src="#" alt="Иконка Еда" class="advantage-list__advantage-icon" width="40" height="35">
+              <img src="/img/icon-burger-svg.png" alt="Иконка Еда" class="advantage-list__advantage-icon" width="40"
+                height="35">
               <h4 class="advantage-list__advantage-heading">ЕДА</h4>
               <p class="advantage-list__advantage-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ
                 РАЗОЧАРУЕТЕСЬ!
@@ -65,25 +71,25 @@
           <h3 class="advantage-list__heading">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
           <p class="advantage-list__number">- №2 -</p>
           <p class="advantage-list__description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
-          <img src="#" alt="Фото каньона" width="320" height="260">
+          <img src="/img/photo-bridge-1-x.png" alt="Фото каньона" width="320" height="260"
+            class="advantage-list__image">
         </li>
-        <li class="advantage-list__list">
+        <li class="advantage-list__list  advantage-list__list--decor">
           <h3 class="advantage-list__heading">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
           <p class="advantage-list__number">— №3 —</p>
           <p class="advantage-list__description">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
         </li>
-        <li class="advantage-list__list">
+        <li class="advantage-list__list  advantage-list__list--decor">
           <h3 class="advantage-list__heading">КРАСИВАЯ ДОРОГА</h3>
           <p class="advantage-list__number"> — №4 —</p>
           <p class="advantage-list__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
         </li>
-        <li class="advantage-list__list">
+        <li class="advantage-list__list advantage-list__list--decor">
           <h3 class="advantage-list__heading">МАЛО ТУРИСТОВ</h3>
           <p class="advantage-list__number">— №5 —</p>
           <p class="advantage-list__description">БОЩИНСТВО ЕДЕТ В ГРАНД КОНЬОН И ТОЛПИТСЯ ТАМ</p>
-
         </li>
-      </ul>
+      </ol>
     </section>
     <section class="main-finde">
       <div class="main-finde__hotel">
@@ -93,20 +99,40 @@
         <a href="#" class="finde-hotel-button">НАЙТИ ГОСТИНИЦУ</a>
       </div>
       <div class="main-finde__map">
-        <a href="finde__map-link"><img src="#" alt="Карта" class="finde__map-image"></a>
+        <a href="#" class="finde__map-link"><img src="/img/map-mobile-jpg.png" alt="Карта" class="finde__map-image"></a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <h2 class="page-footer__tag">#VISITSEDONA</h2>
     <ul class="page-footer__socal">
-      <li class="page-footer__socal-item"><a href="#"><img src="#" alt="Твиттер" width="18" height="14"></a></li>
-      <li class="page-footer__socal-item"><a href="#"><img src="#" alt="Фэйсбук" width="9" height="18"></a></li>
-      <li class="page-footer__socal-item"><a href="#"><img src="#" alt="Ютуб" width="20" height="14"></a></li>
+      <li class="page-footer__socal-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17.5"
+            height="14.663" viewBox="0 0 17.5 14.663" class="page-footer__socal-item-images">
+            <path fill-rule="evenodd"
+              d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"
+              clip-rule="evenodd" />
+          </svg>
+        </a></li>
+      <li class="page-footer__socal-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8.672"
+            height="18.944" viewBox="0 0 8.672 18.944" class="page-footer__socal-item-images">
+            <path
+              d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z" />
+          </svg></a></li>
+      <li class="page-footer__socal-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="19.979"
+            height="14.015" viewBox="0 0 19.979 14.015" class="page-footer__socal-item-images">
+            <path
+              d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z" />
+          </svg>
+        </a></li>
     </ul>
     <div class="page-footer__developed">
       <h3 class="page-footer__developed-heading">Раработано</h3>
-      <a href="#"><img src="#" alt="Логотип Академии" class="page-footer__developed-logo" width="27" height="34"></a>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"
+          class="page-footer__developed-images">
+          <path
+            d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+        </svg>
+      </a>
     </div>
   </footer>
 </body>

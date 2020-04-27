@@ -1,0 +1,86 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.page-nav {
+  position: relative;
+  z-index: 2;
+}
+
+.page-nav__button--off {
+  border: none;
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  width: 23px;
+  height: 4px;
+  background-color: @blue;
+  fill: @blue;
+  box-shadow: 0 8px 0 0 @blue, inset 0 4px 0 0 @blue, 0 16px 0 0 @blue, inset 0 4px 0 0 @blue;
+}
+
+.page-nav__button--on {
+  position: absolute;
+  right: 38px;
+  top: 27px;
+  border: none;
+
+  &::after,
+  &::before {
+    content: "";
+    width: 28px;
+    height: 4px;
+    border: none;
+    position: absolute;
+    background-color: white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.nav-list__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 2.22;
+  text-align: center;
+  background-color: @blue;
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0, 2), inset0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.page-nav__list {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list__item a:hover {
+  background-color: @blueHover;
+}
+
+.nav-list__item a:active {
+  background-color: @blueActive;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}

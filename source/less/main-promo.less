@@ -1,0 +1,42 @@
+.main-promo {
+  display: flex;
+  position: relative;
+  min-height: 389px;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../img/back-mobile-jpg.jpg");
+  margin-top: -28px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-promo__image {
+  margin-top: 90px;
+}
+
+.main-promo::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 68px;
+  background-color: white;
+  z-index: 2;
+  left: 50%;
+  bottom: -9.5%;
+  transform: rotate(-9deg);
+  overflow: hidden;
+}
+
+.main-promo::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 68px;
+  background-color: white;
+  z-index: 2;
+  right: 50%;
+  bottom: -9.5%;
+  transform: rotate(9deg);
+  overflow: hidden;
+}
