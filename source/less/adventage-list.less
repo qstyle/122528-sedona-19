@@ -37,6 +37,7 @@
 
 .advantage-list__image {
   width: 100%;
+  height: auto;
   margin-top: 27px;
   background-color: white;
 }
@@ -104,4 +105,138 @@
   line-height: 1.5;
   text-transform: uppercase;
   padding-left: 48px;
+}
+
+@media (min-width:768px) {
+  .advantage-list__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+  }
+
+  .advantage-list__heading-block {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    background-color: @blue;
+    color: white;
+  }
+
+  .advantage-list__image {
+    width: 65.7%;
+    height: auto;
+    flex-grow: 1;
+    margin: 0;
+    background-color: white;
+  }
+
+  .advantage-list {
+    margin-top: -8px;
+  }
+
+  .advantage-list__heading {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 46px;
+  }
+
+  .advantage-list__description {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    min-width: 162px;
+  }
+
+  .advantage-list__advantage {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantage-list__sublist {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .advantage-list__advantage-icon {
+    width: 72px;
+    height: 75px;
+    fill: @blue;
+  }
+
+  .advantage-list__advantage {
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    padding-top: 30px;
+    padding-right: 10px;
+    margin-top: 30px;
+  }
+
+  .advantage-list__sublist {
+    padding: 0;
+  }
+
+  .advantage-list__advantage-heading {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+
+  .advantage-list__advantage-description {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .advantage-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantage-list__list--decor {
+    display: flex;
+    width: 256px;
+    min-height: 256px;
+
+    &::after {
+      display: none;
+    }
+
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .advantage-list__heading-block--position {
+    order: 2;
+  }
+
+  .advantage-list__list--position {
+    margin-top: -56px;
+  }
+
+  .advantage-list__list--decor {
+    flex-direction: column;
+    background-color: #eeeeee;
+  }
+
+  .advantage-list__number {
+    text-align: center;
+  }
+  .advantage-list__heading{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .advantage-list__description{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
