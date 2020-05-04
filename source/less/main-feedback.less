@@ -139,6 +139,10 @@
   margin-top: 10px;
 }
 
+.main-feedback__form-name-input-input::placeholder {
+  color: black;
+}
+
 .main-feedback__form-contact-input-image {
   display: flex;
   position: absolute;
@@ -267,7 +271,7 @@
   font-weight: bold;
 }
 
-.main-feedback__form_submit {
+.main-feedback__form-submit {
   border: none;
   background-color: @blue;
   font-size: 21px;
@@ -282,91 +286,62 @@
   .feedback-heading__heading {
     font-size: 30px;
     font-weight: bold;
-    line-height: 0.87;
-    margin-top: 73px;
+    margin-top: 65px;
   }
 
   .feedback-heading__advantage {
     font-size: 14px;
+    font-weight: normal;
     line-height: 1.71;
-    margin-top: 7px;
     padding-left: 18%;
     padding-right: 18%;
+    margin-top: -2px;
   }
 
   .main-feedback__form {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 60px;
+    padding-right: 60px;
     border: none;
-    align-items: flex-start;
-    margin-bottom: 67px;
-  }
-
-  .main-feedback__form-impression {
-    position: relative;
-    order: 1;
-    min-height: 311px;
-    width: 42%;
-    justify-content: space-between;
-
-    &::after {
-      content: "";
-      width: 0;
-      height: 292px;
-      position: absolute;
-      left: 93%;
-      top: -9%;
-      background-color: grey;
-      border: solid 0.5px grey;
-      z-index: 2;
-    }
   }
 
   .main-feedback__form-name {
-    width: 42%;
     order: 2;
+    width: 50%;
+    min-height: 365px;
+  }
+
+  .main-feedback__form-impression {
+    order: 1;
+    width: 45%;
     padding: 0;
-    margin-left: -20px;
+    min-height: 365px;
   }
 
   .main-feedback__form-contact {
-    width: 100%;
     order: 3;
-    margin-top: 36px;
-    padding-left: 7%;
-    padding-right: 7%;
+    margin-top: 23px;
+    margin-bottom: 3px;
   }
 
   .main-feedback__form-sight {
-    width: 100%;
     order: 4;
-    margin-top: 7px;
-    flex-direction: row;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-left: 18%;
-    padding-right: 13%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 46px;
   }
 
   .main-feedback__form-emotions {
-    width: 100%;
     order: 5;
-    display: flex;
-    height: auto;
-    align-items: center;
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 18px;
   }
 
-  .main-feedback__form-emotions-textarea {
-    width: 84%;
-    height: 117px;
-    margin-top: 39px;
-  }
-
-  .main-feedback__form_submit {
-    min-width: 324px;
-    margin-top: 46px;
-    margin-left: -325px;
+  .main-feedback__form-submit {
     order: 6;
   }
 
@@ -374,97 +349,95 @@
     font-size: 21px;
     font-weight: bold;
     margin-top: 46px;
-    margin-left: -15px;
+    margin-bottom: 48px;
+    margin-left: -4;
   }
 
   .main-feedback__form-impression-input {
-    margin-top: 49px;
-    margin-left: -11px;
-    margin-bottom: -28px;
+    margin-bottom: 13px;
   }
 
   .main-feedback__form-name-heading {
-    margin-top: 46px;
-    margin-left: -62px;
-    margin-bottom: 48px;
+    margin-top: 45px;
+    margin-bottom: 36px;
+    margin-right: 18px;
   }
 
-  .main-feedback__form-name-input {
-    justify-content: flex-end;
-    margin-top: 8px;
-    margin-bottom: 11px;
+  .main-feedback__form-name-input--name {
+    margin-right: -100px;
   }
 
-  .main-feedback__form-name-input-text {
-    margin-left: 10px;
+  .main-feedback__form-name-input--second-name {
+    margin-right: -97px;
   }
 
-  .main-feedback__form-name-input-input--name {
-    width: 61%;
-    margin-left: 14px;
-  }
-
-  .main-feedback__form-name-input-input--secondName {
-    width: 49%;
-    margin-left: 14px;
-  }
-
-  .main-feedback__form-name-input-input--patronymic {
-    width: 50%;
-    margin-left: 14px;
+  .main-feedback__form-name-input--patronymic {
+    margin-right: -104px;
   }
 
   .main-feedback__form-contact-heading {
     font-size: 21px;
     font-weight: bold;
-    margin-bottom: 5px;
-    margin-top: 15px;
-  }
-
-  .main-feedback__form-contact-input-input {
-    width: 99%;
-    margin-top: 5px;
-    margin-bottom: 4px;
-    padding-left: 26px;
-
-    &::placeholder {
-      color: rgba(0, 0, 0, 1);
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 1.44;
-    }
+    margin-bottom: 3px;
   }
 
   .main-feedback__form-contact-input-text {
-    margin-top: 17px;
-    margin-left: 26px;
+    margin-top: 22px;
+    margin-bottom: -4px;
   }
 
-  .main-feedback__form-sight-heding {
-    margin-left: 21%;
-    margin-right: 29%;
-    margin-bottom: 22px;
-    width: 100%;
-    font-size: 21px;
-    font-weight: bold;
-    margin-top: 27px;
+  .main-feedback__form-contact-input-input {
+    margin-left: -15px;
+    width: 105%;
+    padding-left: 21px;
+
+    &::placeholder {
+      color: black;
+    }
+  }
+
+  .main-feedback__form-contact-input-image {
+    right: -15px;
+    top: 54px;
   }
 
   .main-feedback__form-sight-checkbox {
-    margin-left: 10px;
-    margin-right: 42px;
-    min-width: 210px;
-    margin-bottom: 8px;
+    width: 227px;
+    margin-left: 28px;
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+
+  .main-feedback__form-sight-heding {
+    padding-left: 22%;
+    padding-right: 22%;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+
+  .main-feedback__form-emotions-textarea {
+    width: 97.5%;
+    height: 118px;
+    &::placeholder{
+      font-size: 18px;
+  font-weight: bold;
+  color: black;
+    }
   }
 
   .main-feedback__form-emotions-heading {
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-bottom: 55px;
   }
-
-  .main-feedback__form-contact-input-image {
-    top: 50px;
+  .main-feedback__form-submit{
+    margin-top: 56px;
+    min-width: 324px;
+  }
+  .main-feedback__form{
+    margin-bottom: 66px;
   }
 }
