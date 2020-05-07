@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="content">
   <header class="page-header">
     <section class="page-nav">
       <button type="button" class="page-nav__button page-nav__button--off"></button>
@@ -56,7 +57,7 @@
           <label class="main-feedback__form-name-input--second-name main-feedback__form-name-input">
             <span class="main-feedback__form-name-input-text"> ФАМИЛИЯ*: </span> <input type="text" name="secondName"
               placeholder="Иванов"
-              class="main-feedback__form-name-input-input main-feedback__form-name-input-input--secondName">
+              class="main-feedback__form-name-input-input main-feedback__form-name-input-input--second-name">
           </label>
           <label class="main-feedback__form-name-input main-feedback__form-name-input--patronymic">
             <span class="main-feedback__form-name-input-text"> ОТЧЕСТВО: </span> <input type="text" name="patronymic"
@@ -67,7 +68,7 @@
         <div class="main-feedback__form-write main-feedback__form-contact">
           <h3 class="main-feedback__form-contact-heading">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
           <label class="main-feedback__form-contact-input">
-            <span class="main-feedback__form-contact-input-text"> КОНТАКТНЫЙ ТЕЛЕФОН*:</span> <input type="text"
+            <span class="main-feedback__form-contact-input-text"><span class="main-feedback__form-contact-input-text--off">КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</span> <input type="text"
               name="number" placeholder="Введите телефон" class="main-feedback__form-contact-input-input">
             <span class="main-feedback__form-contact-input-image"> <svg xmlns="http://www.w3.org/2000/svg" width="18"
                 height="18" viewBox="0 0 18 18">
@@ -76,10 +77,10 @@
               </svg>
             </span>
           </label>
-          <label class="main-feedback__form-contact-input">
+          <label class="main-feedback__form-contact-input main-feedback__form-contact-input--email">
             <span class=" main-feedback__form-contact-input-text"> ЭЛЕКТРОННАЯ ПОЧТА*:</span> <input type="text"
               name="email" placeholder="Введите e-mail" class="main-feedback__form-contact-input-input">
-            <span class="main-feedback__form-contact-input-image">
+            <span class="main-feedback__form-contact-input-image main-feedback__form-contact-input-image--email">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path
                   d="M8 10c-.266 0-.5-.094-1-.336L0 6v7c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V6L9 9.664c-.5.242-.734.336-1 .336zm7-8H1c-.55 0-1 .45-1 1v.758l8 4.205 8-4.205V3c0-.55-.45-1-1-1z" />
@@ -257,7 +258,7 @@
         </a></li>
     </ul>
     <div class="page-footer__developed">
-      <h3 class="page-footer__developed-heading">Раработано</h3>
+      <h3 class="page-footer__developed-heading">Разработано</h3>
       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"
           class="page-footer__developed-images">
           <path
@@ -266,6 +267,7 @@
       </a>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>
