@@ -44,7 +44,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid gray;
+  margin-bottom: 41px;
 }
 
 .main-feedback__form-write {
@@ -53,18 +53,34 @@
   width: 100%;
   border: none;
   overflow: hidden;
-  }
+}
 
 .main-feedback__form-name {
+  position: relative;
   font-weight: bold;
   text-align: center;
   margin: 0;
 }
 
+.main-feedback__form-name-heading {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 1px;
+    top: -18px;
+    left: 0;
+    background-color: #e6e6e6;
+  }
+}
+
 .main-feedback__form-name-input {
   display: flex;
   align-items: center;
-  margin-top: 23px;
+  margin-top: 5px;
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -80,6 +96,14 @@
   font-size: 18px;
   line-height: 1.44;
   padding-left: 20px;
+}
+
+.main-feedback__form-name-input--second-name {
+  margin-top: 20px;
+}
+
+.main-feedback__form-name-input--patronymic {
+  margin-top: 20px;
 }
 
 .main-feedback__form-name-input-input--name {
@@ -106,6 +130,12 @@
   margin-right: 22px;
 }
 
+.main-feedback__form-contact {
+  margin-top: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .main-feedback__form-contact-heading {
   text-align: center;
   font-size: 18px;
@@ -113,6 +143,18 @@
   margin: 0;
   margin-top: 25px;
   margin-bottom: 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 1px;
+    top: -18px;
+    left: -20px;
+    background-color: #e6e6e6;
+  }
 }
 
 .main-feedback__form-contact-input {
@@ -126,6 +168,11 @@
   line-height: 1.86;
   margin: 0;
   margin-top: 7px;
+  margin-left: 21px;
+}
+
+.main-feedback__form-contact-input-text-email {
+  margin-top: 14px;
 }
 
 .main-feedback__form-contact-input-input {
@@ -135,7 +182,8 @@
   border: none;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 5px;
+  padding-left: 20px;
 }
 
 .main-feedback__form-name-input-input::placeholder {
@@ -148,10 +196,14 @@
   width: 58px;
   height: 60px;
   background-color: #e6e6e6;
-  right: 3px;
-  top: 42px;
+  right: 0;
+  top: 37px;
   justify-content: center;
   align-items: center;
+}
+
+.main-feedback__form-contact-input-image--email {
+  top: 44px;
 }
 
 .main-feedback__form-boxes {
@@ -162,6 +214,10 @@
 
 .main-feedback__form-impression {
   border: none;
+  margin-top: 23px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-feedback__form-impression-input-input ~ .main-feedback__form-impression-input-image--off {
@@ -183,7 +239,7 @@
 .main-feedback__form-impression-input {
   display: flex;
   align-items: center;
-  margin-top: 8px;
+  margin-top: 28px;
 }
 
 .main-feedback__form-impression-input-image {
@@ -195,18 +251,42 @@
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 26px;
+  margin-left: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 1px;
+    top: -18px;
+    left: -20px;
+    background-color: #e6e6e6;
+  }
 }
 
 .main-feedback__form-impression-input-text {
   font-size: 18px;
   font-weight: bold;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+.main-feedback__form-impression-input-negative {
+  margin-top: 10px;
+}
+
+.main-feedback__form-impression-input-difficulty {
+  margin-top: 11px;
 }
 
 .main-feedback__form-sight {
   display: flex;
   flex-direction: column;
   border: none;
+  margin-top: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-feedback__form-sight-checkbox {
@@ -244,18 +324,38 @@
   text-transform: uppercase;
   margin-top: 37px;
   margin-bottom: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 1px;
+    top: -18px;
+    left: -20px;
+    background-color: #e6e6e6;
+  }
 }
 
 .main-feedback__form-emotions {
   display: flex;
   flex-direction: column;
   border: none;
+  margin-top: 29px;
 }
 
 .main-feedback__form-emotions-heading {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.main-feedback__form-contact-input-input::placeholder {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .main-feedback__form-emotions-textarea {
@@ -264,10 +364,16 @@
   width: 279px;
   height: 160px;
   padding-left: 21px;
-  padding-top: 22px;
+  padding-top: 20px;
   padding-bottom: 22px;
+  padding-right: 21px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.main-feedback__form-emotions-textarea::placeholder {
+  color: black;
+  font-family: @PTnormal;
 }
 
 .main-feedback__form-submit {
@@ -376,8 +482,8 @@
   }
 
   .main-feedback__form-name-heading {
+    position: relative;
     margin-top: 45px;
-
     margin-right: 18px;
   }
 
@@ -429,10 +535,6 @@
     margin-left: -15px;
     width: 105%;
     padding-left: 21px;
-
-    &::placeholder {
-      color: black;
-    }
   }
 
   .main-feedback__form-contact-input-image {
