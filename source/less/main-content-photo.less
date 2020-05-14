@@ -255,6 +255,12 @@
 
   .main-content-photo {
     background-color: white;
+    margin-top: 38px;
+  }
+
+  .main-content__advantage-photo {
+    padding-left: 350px;
+    padding-right: 350px;
   }
 
   .content-heading-photo {
@@ -265,10 +271,15 @@
     padding: 0;
     position: relative;
     width: 400px;
+
+    &:not(:nth-child(3)) {
+      width: 33.3%;
+    }
   }
 
   .block-photo:nth-child(3) {
     width: 100%;
+    margin-top: 43px;
   }
 
   .block-photo__description {
