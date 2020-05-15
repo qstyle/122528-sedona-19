@@ -74,12 +74,12 @@
 }
 
 .nav-list__item a:hover {
-  background-color: @blueHover;
+  background-color: #669ec0;
 }
 
 .nav-list__item a:active {
-  background-color: @blueActive;
-  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .page-logo {
@@ -132,6 +132,28 @@
 
   .page-nav__button--off {
     display: none;
+  }
+
+  .nav-list__item a:hover {
+    background-color: white;
+    color: #81b3d2;
+  }
+
+  .nav-list__item a:active {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-list__item--active a {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
 }
 

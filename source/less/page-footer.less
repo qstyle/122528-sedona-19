@@ -27,6 +27,18 @@
   height: 48px;
   background-color: @blue;
   margin-right: 6px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.page-footer__socal-item:active .page-footer__socal-item-images {
+  opacity: 0.3;
 }
 
 .page-footer__socal-item-images {
@@ -35,10 +47,26 @@
 
 .page-footer__developed {
   display: flex;
-
   align-items: center;
   margin-top: 17px;
+
+  &:hover {
+    color: white;
+  }
+
+  &:active {
+    color: white;
+  }
 }
+
+.page-footer__developed:hover .page-footer__developed-images {
+  fill: #81b3d2;
+}
+
+.page-footer__developed:active .page-footer__developed-images {
+  opacity: 0.3;
+}
+
 
 .page-footer__developed-heading {
   margin-left: 30%;

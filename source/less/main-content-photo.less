@@ -154,6 +154,15 @@
 
 .presentation__video-button-image {
   fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #333333;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -217,6 +226,16 @@
     font-weight: bold;
     line-height: 0.87;
     margin-top: 74px;
+  }
+
+  .presentation__video-button-image {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-content__advantage-photo {
