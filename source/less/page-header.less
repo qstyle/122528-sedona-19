@@ -6,19 +6,17 @@
 
 .page-nav {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .page-nav__button--off {
   border: none;
   position: absolute;
-  right: 20px;
-  bottom: -20px;
-  width: 23px;
-  height: 4px;
-  background-color: @blue;
+  right: 8px;
+  bottom: -42px;
+  background: white;
   fill: @blue;
-  box-shadow: 0 8px 0 0 @blue, inset 0 4px 0 0 @blue, 0 16px 0 0 @blue, inset 0 4px 0 0 @blue;
+  z-index: 10;
 }
 
 .page-nav__button--on {
