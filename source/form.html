@@ -55,12 +55,12 @@
           <label class="main-feedback__form-name-input  main-feedback__form-name-input--name">
             <span class="main-feedback__form-name-input-text"> ИМЯ*:</span> <input type="text" name="firstName"
               placeholder="Петр"
-              class="main-feedback__form-name-input-input main-feedback__form-name-input-input--name">
+              class="main-feedback__form-name-input-input main-feedback__form-name-input-input--name main-feedback__form-name-input-input--js" required>
           </label>
           <label class="main-feedback__form-name-input--second-name main-feedback__form-name-input">
-            <span class="main-feedback__form-name-input-text"> ФАМИЛИЯ*: </span> <input type="text" name="secondName"
+            <span class="main-feedback__form-name-input-text main-feedback__form-name-input-input--js"> ФАМИЛИЯ*: </span> <input type="text" name="secondName"
               placeholder="Иванов"
-              class="main-feedback__form-name-input-input main-feedback__form-name-input-input--second-name">
+              class="main-feedback__form-name-input-input main-feedback__form-name-input-input--second-name" required>
           </label>
           <label class="main-feedback__form-name-input main-feedback__form-name-input--patronymic">
             <span class="main-feedback__form-name-input-text"> ОТЧЕСТВО: </span> <input type="text" name="patronymic"
@@ -72,7 +72,7 @@
           <h3 class="main-feedback__form-contact-heading">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
           <label class="main-feedback__form-contact-input">
             <span class="main-feedback__form-contact-input-text"><span class="main-feedback__form-contact-input-text--off">КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</span> <input type="text"
-              name="number" placeholder="Введите телефон" class="main-feedback__form-contact-input-input">
+              name="number" placeholder="Введите телефон" class="main-feedback__form-contact-input-input main-feedback__form-name-input-input--js" required>
             <span class="main-feedback__form-contact-input-image"> <svg xmlns="http://www.w3.org/2000/svg" width="18"
                 height="18" viewBox="0 0 18 18">
                 <path fill="#010101"
@@ -81,8 +81,8 @@
             </span>
           </label>
           <label class="main-feedback__form-contact-input main-feedback__form-contact-input--email">
-            <span class=" main-feedback__form-contact-input-text main-feedback__form-contact-input-text-email"> ЭЛЕКТРОННАЯ ПОЧТА*:</span> <input type="text"
-              name="email" placeholder="Введите e-mail" class="main-feedback__form-contact-input-input">
+            <span class=" main-feedback__form-contact-input-text main-feedback__form-contact-input-text-email "> ЭЛЕКТРОННАЯ ПОЧТА*:</span> <input type="text"
+              name="email" placeholder="Введите e-mail" class="main-feedback__form-contact-input-input main-feedback__form-name-input-input--js" required>
             <span class="main-feedback__form-contact-input-image main-feedback__form-contact-input-image--email">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path
@@ -98,7 +98,7 @@
               class="main-feedback__form-impression-input-image--off main-feedback__form-impression-input-image">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
                 viewbox="0 0 58 58">
-                <circle cx="29" cy="29" r="29" fill="#f2f2f2"></circle>
+                <circle cx="29" cy="29" r="29" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></circle>
               </svg>
             </span>
             <span class="main-feedback__form-impression-input-image--on main-feedback__form-impression-input-image">
@@ -271,6 +271,18 @@
     </div>
   </footer>
   </div>
+  <div class="modal-confirm modal-off">
+    <h3 class="modal-confirm__heading">Ваш отзыв отправлен!</h3>
+      <p class="modal-confirm__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal-confirm__button"><button type="button" class="modal-confirm__button-button">ЗАКРЫТЬ ОКНО</button></div>
+  </div>
+  <div class="modal-error ">
+    <h3 class="modal-error__heading">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+    <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button type="button" class="modal-error__button">OK</button>
+  </div>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
