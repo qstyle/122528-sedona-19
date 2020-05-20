@@ -23,7 +23,7 @@
   padding-left: 19px;
   padding-right: 19px;
   max-width: 500px;
-  margin-top: 18px;
+  margin-top: 40px;
 }
 
 .feedback-heading__advantage {
@@ -34,7 +34,7 @@
   line-height: 1.71;
   font-size: 14px;
   text-align: center;
-  margin-bottom: 27px;
+  margin-bottom: 18px;
   text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid gray;
+  margin-bottom: 41px;
 }
 
 .main-feedback__form-write {
@@ -53,46 +53,85 @@
   width: 100%;
   border: none;
   overflow: hidden;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .main-feedback__form-name {
-  font-size: 18px;
+  position: relative;
   font-weight: bold;
   text-align: center;
   margin: 0;
 }
 
+.main-feedback__form-name-heading {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 1px;
+    top: -18px;
+    left: 0;
+    background-color: #e6e6e6;
+  }
+}
+
 .main-feedback__form-name-input {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 5px;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-feedback__form-name-input-input {
   flex-shrink: 1;
-
+  width: 100%;
   border: none;
   background-color: #f2f2f2;
   height: 58px;
-  margin-left: 20px;
+  margin-left: 14px;
   font-size: 18px;
   line-height: 1.44;
   padding-left: 20px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: white;
+    border: solid 4px #e5e5e5;
+    outline: none;
+  }
+
+  &:focus {
+    background-color: white;
+    border: solid 4px #e5e5e5;
+    outline: none;
+  }
+}
+
+.main-feedback__form-name-input--second-name {
+  margin-top: 20px;
+}
+
+.main-feedback__form-name-input--patronymic {
+  margin-top: 20px;
 }
 
 .main-feedback__form-name-input-input--name {
-  width: 209px;
+  width: 100%;
 }
 
 .main-feedback__form-name-input-input--secondName {
-  width: 171px;
+  width: 100%;
 }
 
 .main-feedback__form-name-input-input--patronymic {
-  width: 175px;
+  width: 100%;
 }
 
 .main-feedback__form-name-input-text {
@@ -107,6 +146,12 @@
   margin-right: 22px;
 }
 
+.main-feedback__form-contact {
+  margin-top: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .main-feedback__form-contact-heading {
   text-align: center;
   font-size: 18px;
@@ -114,6 +159,18 @@
   margin: 0;
   margin-top: 25px;
   margin-bottom: 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 1px;
+    top: -18px;
+    left: -20px;
+    background-color: #e6e6e6;
+  }
 }
 
 .main-feedback__form-contact-input {
@@ -127,6 +184,11 @@
   line-height: 1.86;
   margin: 0;
   margin-top: 7px;
+  margin-left: 21px;
+}
+
+.main-feedback__form-contact-input-text-email {
+  margin-top: 14px;
 }
 
 .main-feedback__form-contact-input-input {
@@ -136,7 +198,8 @@
   border: none;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 5px;
+  padding-left: 20px;
 }
 
 .main-feedback__form-name-input-input::placeholder {
@@ -149,10 +212,14 @@
   width: 58px;
   height: 60px;
   background-color: #e6e6e6;
-  right: 3px;
-  top: 42px;
+  right: 0;
+  top: 37px;
   justify-content: center;
   align-items: center;
+}
+
+.main-feedback__form-contact-input-image--email {
+  top: 44px;
 }
 
 .main-feedback__form-boxes {
@@ -163,6 +230,10 @@
 
 .main-feedback__form-impression {
   border: none;
+  margin-top: 23px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-feedback__form-impression-input-input ~ .main-feedback__form-impression-input-image--off {
@@ -184,11 +255,35 @@
 .main-feedback__form-impression-input {
   display: flex;
   align-items: center;
-  margin-top: 8px;
+  margin-top: 28px;
 }
 
 .main-feedback__form-impression-input-image {
   margin-right: 10px;
+}
+
+.main-feedback__form-sight-checkbox:hover .main-feedback__form-impression-input-image--interactiv {
+  fill: #e5e5e5;
+}
+
+.main-feedback__form-sight-checkbox:active .main-feedback__form-impression-input-image--interactiv {
+  fill: #d5d5d5;
+}
+
+.main-feedback__form-sight-checkbox:active .main-feedback__form-impression-input-image--interactiv-on {
+  opacity: 0.3;
+}
+
+.main-feedback__form-impression-input:hover .main-feedback__form-impression-input-image--interactiv {
+  fill: #e5e5e5;
+}
+
+.main-feedback__form-impression-input:active .main-feedback__form-impression-input-image--interactiv {
+  fill: #d5d5d5;
+}
+
+.main-feedback__form-impression-input:active .main-feedback__form-impression-input-image--interactiv-on {
+  opacity: 0.3;
 }
 
 .main-feedback__form-impression-heading {
@@ -196,18 +291,42 @@
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 26px;
+  margin-left: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 1px;
+    top: -18px;
+    left: -20px;
+    background-color: #e6e6e6;
+  }
 }
 
 .main-feedback__form-impression-input-text {
   font-size: 18px;
   font-weight: bold;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+.main-feedback__form-impression-input-negative {
+  margin-top: 10px;
+}
+
+.main-feedback__form-impression-input-difficulty {
+  margin-top: 11px;
 }
 
 .main-feedback__form-sight {
   display: flex;
   flex-direction: column;
   border: none;
+  margin-top: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-feedback__form-sight-checkbox {
@@ -245,18 +364,38 @@
   text-transform: uppercase;
   margin-top: 37px;
   margin-bottom: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 1px;
+    top: -18px;
+    left: -20px;
+    background-color: #e6e6e6;
+  }
 }
 
 .main-feedback__form-emotions {
   display: flex;
   flex-direction: column;
   border: none;
+  margin-top: 29px;
 }
 
 .main-feedback__form-emotions-heading {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.main-feedback__form-contact-input-input::placeholder {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .main-feedback__form-emotions-textarea {
@@ -265,10 +404,16 @@
   width: 279px;
   height: 160px;
   padding-left: 21px;
-  padding-top: 22px;
+  padding-top: 20px;
   padding-bottom: 22px;
+  padding-right: 21px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.main-feedback__form-emotions-textarea::placeholder {
+  color: black;
+  font-family: @PTnormal;
 }
 
 .main-feedback__form-submit {
@@ -310,12 +455,12 @@
     padding-left: 60px;
     padding-right: 60px;
     border: none;
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 
   .main-feedback__form-name {
     order: 2;
-    width: 50%;
+    width: 55%;
     min-height: 365px;
   }
 
@@ -324,13 +469,14 @@
     order: 1;
     width: 45%;
     padding: 0;
+    margin-top: 9px;
     min-height: 365px;
 
     &::after {
       content: "";
-      width: 2px;
+      width: 1px;
       height: 295px;
-      background-color: grey;
+      background-color: rgba(0, 1, 1, 0.2);
       position: absolute;
       right: -11%;
       top: 14%;
@@ -341,6 +487,7 @@
     order: 3;
     margin-top: 23px;
     margin-bottom: 3px;
+    padding: 0;
   }
 
   .main-feedback__form-sight {
@@ -349,7 +496,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin-top: 46px;
+    margin-top: 50px;
   }
 
   .main-feedback__form-emotions {
@@ -368,8 +515,16 @@
     font-size: 21px;
     font-weight: bold;
     margin-top: 46px;
-    margin-bottom: 48px;
-    margin-left: -4;
+    margin-bottom: 29px;
+    margin-left: 0;
+  }
+
+  .main-feedback__form-impression-heading::after {
+    display: none;
+  }
+
+  .main-feedback__form-impression-input-difficulty {
+    margin-top: 5px;
   }
 
   .main-feedback__form-impression-input {
@@ -377,21 +532,32 @@
   }
 
   .main-feedback__form-name-heading {
-    margin-top: 45px;
-    margin-bottom: 36px;
+    position: relative;
+    margin-top: 53px;
+    margin-left: 13px;
     margin-right: 18px;
   }
 
+  .main-feedback__form-name-heading::after {
+    display: none;
+  }
+
   .main-feedback__form-name-input--name {
-    margin-right: -100px;
+    padding-right: 0;
+    margin-top: 40px;
+    margin-left: 70px;
   }
 
   .main-feedback__form-name-input--second-name {
-    margin-right: -97px;
+    margin-left: 91px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .main-feedback__form-name-input--patronymic {
-    margin-right: -104px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 92px;
   }
 
   .main-feedback__form-contact-heading {
@@ -427,17 +593,13 @@
   }
 
   .main-feedback__form-contact-input-input {
-    margin-left: -15px;
     width: 105%;
     padding-left: 21px;
-
-    &::placeholder {
-      color: black;
-    }
+    margin-top: 10px;
   }
 
   .main-feedback__form-contact-input-image {
-    right: -15px;
+    right: 0;
     top: 54px;
   }
 
@@ -450,8 +612,9 @@
 
   .main-feedback__form-sight-heding {
     position: relative;
-    padding-left: 22%;
-    padding-right: 22%;
+    padding-left: 130px;
+    padding-right: 130px;
+    width: 100%;
     font-size: 21px;
     font-weight: bold;
     margin-top: 0;
@@ -479,8 +642,8 @@
   }
 
   .main-feedback__form-emotions-textarea {
-    width: 97.5%;
-    height: 118px;
+    width: 100%;
+    height: 162px;
 
     &::placeholder {
       font-size: 18px;
@@ -530,7 +693,7 @@
 
 @media (min-width: 1200px) {
   .feedback-heading {
-    margin-top: 37px;
+    margin-top: 40px;
   }
 
   .feedback-heading__advantage {
@@ -539,7 +702,7 @@
   }
 
   .main-feedback__form-impression-heading {
-    margin-top: 30px;
+    margin-top: 31px;
     margin-left: 136px;
   }
 
@@ -552,33 +715,36 @@
   }
 
   .main-feedback__form-name-heading {
-    margin-top: 31px;
-    margin-right: 153px;
+    margin-top: 38px;
+    margin-right: 180px;
+    font-size: 21px;
+    font-weight: bold;
   }
 
+
   .main-feedback__form-name-input-input--name {
-    width: 329px;
+    width: 350px;
   }
 
   .main-feedback__form-name-input--name {
-    margin-left: -9px;
+    margin-top: 35px;
+    margin-left: 74px;
   }
 
   .main-feedback__form-name-input--second-name {
-    margin-left: -9px;
+    margin-left: 75px;
   }
 
   .main-feedback__form-name-input-input--second-name {
-    width: 290px;
+    width: 312px;
   }
 
   .main-feedback__form-name-input--patronymic {
-    margin-left: -9px;
+    margin-left: 75px;
   }
 
   .main-feedback__form-name-input-input--patronymic {
-    margin-top: -4px;
-    width: 295px;
+    width: 314px;
   }
 
   .main-feedback__form-contact-heading {
@@ -588,22 +754,22 @@
 
     &::after {
       content: "";
-      width: 27%;
+      width: 279px;
       height: 1px;
-      background-color: grey;
+      background-color: rgba(0, 1, 1, 0.2);
       position: absolute;
       top: 50%;
-      left: 4%;
+      left: 5.5%;
     }
 
     &::before {
       content: "";
-      width: 27%;
+      width: 279px;
       height: 1px;
-      background-color: grey;
+      background-color: rgba(0, 1, 1, 0.2);
       position: absolute;
       top: 50%;
-      right: 4%;
+      right: 5.5%;
     }
   }
 
@@ -616,20 +782,26 @@
     flex-direction: row;
   }
 
+  .main-feedback__required-input {
+    bottom: 19px;
+    right: 10%;
+  }
+
   .main-feedback__form-contact-input {
     flex-direction: row;
-    width: 40%;
-    margin-left: 44px;
+    margin-left: 27px;
+    margin-top: 2px;
   }
 
   .main-feedback__form-contact-input-text {
     margin-top: 27px;
-    margin-right: 32px;
+    margin-right: 17px;
+    margin-left: 32px;
   }
 
   .main-feedback__form-contact-input-input {
-    width: 293px;
-    height: 56px;
+    width: 315px;
+    height: 58px;
   }
 
   .main-feedback__form-contact-input--email {
@@ -638,38 +810,38 @@
   }
 
   .main-feedback__form-contact-input-image {
-    right: 18px;
-    top: 11px;
+    right: 0;
+    top: 10px;
   }
 
   .main-feedback__form-contact-input-image--email {
-    right: 1%;
-    top: 15%;
+    right: 0;
+    top: 9px;
   }
 
   .main-feedback__form-sight-heding {
-    padding-left: 40%;
-    padding-right: 40%;
-    margin-top: 3px;
+    padding-left: 30%;
+    padding-right: 30%;
+
 
     &::after {
       content: "";
-      width: 25%;
+      width: 27%;
       height: 1px;
-      background-color: grey;
+      background-color: rgba(0, 1, 1, 0.2);
       position: absolute;
       top: 50%;
-      left: 94px;
+      left: 39px;
     }
 
     &::before {
       content: "";
-      width: 25%;
+      width: 27%;
       height: 1px;
-      background-color: grey;
+      background-color: rgba(0, 1, 1, 0.2);
       position: absolute;
       top: 50%;
-      right: 94px;
+      right: 39px;
     }
   }
 
@@ -690,7 +862,7 @@
       content: "";
       width: 26%;
       height: 1px;
-      background-color: grey;
+      background-color: rgba(0, 1, 1, 0.2);
       position: absolute;
       top: 50%;
       left: 5%;
@@ -700,7 +872,7 @@
       content: "";
       width: 26%;
       height: 1px;
-      background-color: grey;
+      background-color: rgba(0, 1, 1, 0.2);
       position: absolute;
       top: 50%;
       right: 6%;
@@ -710,11 +882,24 @@
   .main-feedback__form-emotions-textarea {
     margin-left: auto;
     margin-right: auto;
-    width: 86.5%;
+    width: 89%;
   }
 
   .main-feedback__form-submit {
     min-width: 480px;
     margin-left: 60px;
+  }
+
+  .main-feedback__form-name-input {
+    padding: 0;
+  }
+
+  .main-feedback__form-contact-input-text-email {
+    margin-left: 16px;
+  }
+
+  .main-feedback__form {
+    width: 100%;
+    box-sizing: border-box;
   }
 }

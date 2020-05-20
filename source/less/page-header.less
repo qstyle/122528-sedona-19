@@ -6,44 +6,31 @@
 
 .page-nav {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .page-nav__button--off {
   border: none;
   position: absolute;
-  right: 20px;
-  bottom: -20px;
-  width: 23px;
-  height: 4px;
-  background-color: @blue;
+  right: 13px;
+  bottom: -42px;
+  background: white;
   fill: @blue;
-  box-shadow: 0 8px 0 0 @blue, inset 0 4px 0 0 @blue, 0 16px 0 0 @blue, inset 0 4px 0 0 @blue;
+  z-index: 10;
 }
 
 .page-nav__button--on {
   position: absolute;
-  right: 38px;
-  top: 27px;
+  right: 15px;
+  top: 16px;
   border: none;
+  z-index: 7;
+  background-color: @blue;
+  fill: white;
+}
 
-  &::after,
-  &::before {
-    content: "";
-    width: 28px;
-    height: 4px;
-    border: none;
-    position: absolute;
-    background-color: white;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
+.nav-list__item {
+  border-bottom: 1px solid rgba(129, 179, 210, 0.8);
 }
 
 .nav-list__item a {
@@ -70,12 +57,12 @@
 }
 
 .nav-list__item a:hover {
-  background-color: @blueHover;
+  background-color: #669ec0;
 }
 
 .nav-list__item a:active {
-  background-color: @blueActive;
-  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .page-logo {
@@ -85,10 +72,31 @@
   z-index: 2;
 }
 
+.display-none {
+  display: none;
+}
+
+
 @media (min-width: 768px) {
   .page-nav__list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .display-none {
+    display: block;
+  }
+
+  .page-nav__button--off {
+    display: none;
+  }
+
+  .page-nav__button--on {
+    display: none;
+  }
+
+  .page-nav {
+    z-index: 1;
   }
 
   .page-logo {
@@ -106,10 +114,16 @@
     min-width: 153px;
     height: 41px;
     font-size: 14px;
+    min-height: 55px;
+  }
+
+  .content-heading-images {
+    display: none;
   }
 
   .nav-list__item {
     list-style: none;
+    border: none;
   }
 
   .nav-list__item:nth-child(3) {
@@ -122,6 +136,28 @@
 
   .page-nav__button--off {
     display: none;
+  }
+
+  .nav-list__item a:hover {
+    background-color: white;
+    color: #81b3d2;
+  }
+
+  .nav-list__item a:active {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-list__item--active a {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
 }
 

@@ -9,9 +9,12 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 41px;
 }
 
-.main-content__advantage-photo {
+.content-heading__advantage-photo {
   align-items: center;
   margin-right: 24px;
   margin-left: 24px;
@@ -60,21 +63,22 @@
   opacity: 0.3;
 }
 
-.presentatione__video-block {
+.presentation-video__block {
   display: flex;
   position: relative;
   width: 100%;
 }
 
-.presentatione__video {
+.presentation-video {
   position: relative;
+  margin-bottom: 42px;
 }
 
-.presentation__video-image {
+.presentation-video__image {
   z-index: 1;
 }
 
-.presentatione__video-timer {
+.presentation-video__timer {
   width: 87%;
   height: 45px;
   background-color: rgba(1, 1, 1, 0.6);
@@ -84,7 +88,7 @@
   z-index: 2;
 }
 
-.presentatione__video-timer-line {
+.presentation-video__timer-line {
   content: "";
   width: 84%;
   height: 2px;
@@ -94,7 +98,7 @@
   left: 7.9%;
 }
 
-.presentatione__video-timer-scroll {
+.presentation-video__timer-scroll {
   content: "";
   width: 10px;
   height: 10px;
@@ -102,11 +106,11 @@
   border: 1px solid black;
   background-color: white;
   position: absolute;
-  top: 39%;
+  top: 40%;
   left: 21%;
 }
 
-.presentation__video-control {
+.presentation-video__control {
   display: flex;
   background-color: rgba(242, 242, 242, 1);
   width: 86.8%;
@@ -115,41 +119,49 @@
   position: relative;
 }
 
-.presentation__video-button {
+.presentation-video__button {
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
 
-.presentation__video-button-replay {
+.presentation-video__button-replay {
   position: absolute;
   top: 33%;
-  left: 8.9%;
+  left: 6.9%;
 }
 
 .block-photo__image {
   display: flex;
   width: auto;
-
   height: auto;
-  margin-top: 22px;
+  margin-top: 24px;
   margin-right: 20px;
   margin-left: 20px;
 }
 
-.presentation__video-button-captions {
+.presentation-video__button-captions {
   position: absolute;
   top: 33%;
-  right: 26.4%;
+  right: 23.4%;
 }
 
-.presentation__video-button-fullscreen {
+.presentation-video__button-fullscreen {
   position: absolute;
   top: 33%;
-  right: 8.2%;
+  right: 5.2%;
 }
 
-.presentation__video-button-image {
+.presentation-video__button-image {
   fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #333333;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -159,25 +171,30 @@
   }
 
   .main-content-photo {
-    margin-top: 50px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
   }
 
+  .block-photo__description-likes-quantity {
+    margin-top: 5px;
+  }
+
   .block-photo {
     margin-top: 42px;
-    width: 42%;
+    width: 50%;
     padding-left: 7.8%;
     padding-right: 7.8%;
 
 
     &:nth-child(3) {
-      width: 84%;
+      width: 100%;
     }
 
     &:nth-child(5) {
       padding-left: 0;
+      padding-right: 20px;
+      width: 42%;
     }
 
     &:not(:nth-child(3)) {
@@ -195,6 +212,9 @@
     height: 267px;
   }
 
+  .block-photo__description-author {
+    margin-top: 6px;
+  }
 
   .content-heading-photo {
     display: flex;
@@ -204,14 +224,25 @@
     font-size: 30px;
     font-weight: bold;
     line-height: 0.87;
+    margin-top: 74px;
   }
 
-  .main-content__advantage-photo {
+  .presentation-video__button-image {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .content-heading__advantage-photo {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-left: 16%;
-    padding-right: 16%;
+    padding-left: 137px;
+    padding-right: 137px;
     margin-top: 5px;
   }
 
@@ -232,40 +263,40 @@
   }
 }
 
-@media (min-width: 768px) {
-  .content-heading-photo {
-    margin-top: 72px;
-  }
-
-  .main-content__advantage-photo {
-    padding-left: 30%;
-    padding-right: 30%;
-  }
-}
 
 @media (min-width: 1200px) {
   .main-promo-photo {
     background-image: url("/img/back-desktop-jpg.png");
-    z-index: 1;
     margin-top: -17px;
   }
 
   .main-content-photo {
     background-color: white;
+    margin-top: 38px;
+  }
+
+  .content-heading__advantage-photo {
+    padding-left: 350px;
+    padding-right: 350px;
   }
 
   .content-heading-photo {
-    margin-top: 61px;
+    margin-top: 75px;
   }
 
   .block-photo {
     padding: 0;
     position: relative;
     width: 400px;
+
+    &:not(:nth-child(3)) {
+      width: 33.3%;
+    }
   }
 
   .block-photo:nth-child(3) {
     width: 100%;
+    margin-top: 43px;
   }
 
   .block-photo__description {
