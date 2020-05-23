@@ -31,13 +31,13 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.mini.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -45,7 +45,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", gulp.series("html")).on("change", server.reload);
 });
 
 gulp.task("images", function () {
@@ -65,7 +65,7 @@ gulp.task("images", function () {
 gulp.task('webp', function () {
   gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({
-      quality: 70, alphaQuality: 0
+      quality: 70
     }))
     .pipe(gulp.dest((file) => file.base))
 });
