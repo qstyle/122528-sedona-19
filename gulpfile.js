@@ -31,13 +31,13 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.mini.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,
@@ -65,9 +65,9 @@ gulp.task("images", function () {
 gulp.task('webp', function () {
   gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({
-      quality: 70
+      quality: 70, alphaQuality: 0
     }))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest((file) => file.base))
 });
 
 gulp.task('sprite', function () {

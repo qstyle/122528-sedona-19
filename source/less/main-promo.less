@@ -4,7 +4,8 @@
   min-height: 389px;
   width: 100%;
   overflow: hidden;
-  margin-top: -28px;
+  background-image: url("../img/back-mobile-jpg.jpg");
+  margin-top: -34px;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: flex-start;
@@ -24,6 +25,7 @@
 @media (min-width: 768px) {
   .main-promo {
     height: 518px;
+    background-image: url("../img/back-desktop-jpg.jpg");
     margin-top: 0;
   }
 
@@ -41,23 +43,5 @@
   .main-promo__image-decor {
     width: 100%;
     overflow: hidden;
-  }
-}
-
-.no-webp .main-promo {
-  @media (min-width: 768px) {
-    background-image: url("../img/back-desktop-jpg.jpg");
-  }
-  @media (min-width: 768px) and (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/back-desktop-jpg@2x.jpg");
-  }
-}
-
-.webp .main-promo {
-  @media not (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) and (min-width: 768px) {
-    background-image: url("../img/back-desktop-jpg.webp");
-  }
-  @media (min-width: 768px) and (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/back-desktop-jpg@2x.webp");
   }
 }
