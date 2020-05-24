@@ -31,6 +31,7 @@
 
 .advantage-list__number {
   margin-top: 9px;
+  margin-bottom: 16px;
 }
 
 .advantage-list__description {
@@ -55,10 +56,12 @@
 .advantage-list__image {
   width: 100%;
   height: auto;
-  min-height: 260px;
-  margin-top: 27px;
+  min-height: 278px;
+  margin-top: 24px;
   background-color: white;
+  margin-bottom: -10px;
 }
+
 
 .advantage-list__sublist {
   display: flex;
@@ -70,7 +73,7 @@
   padding-left: 22px;
   padding-right: 51px;
   padding-top: 29px;
-  margin-top: 0;
+  margin-top: -6px;
   min-height: 386px;
 }
 
@@ -78,10 +81,6 @@
   display: flex;
   flex-wrap: wrap;
   color: black;
-
-  &:nth-child(2) {
-    margin-top: 7px;
-  }
 
   &:last-child {
     margin-bottom: 21px;
@@ -128,12 +127,22 @@
   z-index: 3;
 }
 
+.advantage-list__picture {
+  display: flex;
+  flex-grow: 1;
+  height: auto;
+  margin-bottom: -5px;
+  min-height: 259px;
+}
+
 .advantage-list__advantage-description {
   display: flex;
   text-align: left;
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 20px;
   padding-left: 48px;
 }
 
@@ -146,6 +155,17 @@
     margin-top: 40px;
   }
 
+  .advantage-list__list--position {
+    margin-top: 21px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .advantage-list__image-bridge {
+    height: 100%;
+    min-height: 262px;
+  }
+
   .advantage-list__heading-block {
     display: flex;
     flex-direction: column;
@@ -155,11 +175,12 @@
   }
 
   .advantage-list__image {
-    width: 65.7%;
-    height: auto;
+    width: 100%;
+    height: 98%;
     flex-grow: 1;
-    margin: 0;
+    margin-top: 0;
     background-color: white;
+    min-height: 100px;
   }
 
   .advantage-list {
@@ -218,7 +239,7 @@
     font-size: 21px;
     font-weight: bold;
     line-height: 1.24;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: -10px;
   }
 
@@ -261,7 +282,7 @@
   }
 
   .advantage-list__list--position {
-    margin-top: 27px;
+    margin-top: 41px;
   }
 
   .advantage-list__heading {
@@ -284,10 +305,6 @@
     padding-left: 60px;
     padding-right: 60px;
     margin-top: 21px;
-  }
-
-  .advantage-list__advantage {
-    width: 389px;
   }
 
   .advantage-list__advantage-heading {

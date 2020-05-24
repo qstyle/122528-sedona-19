@@ -31,10 +31,11 @@
 
   .main-promo__image-decor {
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: -1px;
-    width: 100%;
+    width: 156%;
     overflow: hidden;
+    transform: translate(-50%);
   }
 
   .main-promo-photo__image {
@@ -44,5 +45,11 @@
 
   .block-photo {
     border: none;
+  }
+
+  @media (min-width: 1200px) {
+    .main-promo__image-decor {
+      width: 100%;
+    }
   }
 }

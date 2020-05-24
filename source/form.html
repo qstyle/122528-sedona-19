@@ -10,276 +10,316 @@
 
 <body>
   <div class="content">
-  <header class="page-header">
-    <section class="page-nav">
-      <button type="button" class="page-nav__button--on display-none"><svg xmlns="http://www.w3.org/2000/svg" width="22.199" height="22.199" version="1" viewBox="0 0 22.199 22.199">
-        <path d="M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z"/>
-    </svg>
-    </button>
-      <button type="button" class="page-nav__button page-nav__button--off"> <svg xmlns="http://www.w3.org/2000/svg" width="22.928" height="21.982" version="1" viewBox="0 0 22.928 21.982">
-        <path d="M0 0h22.928v3.964H0zM0 9.009h22.928v3.964H0zM0 18.018h22.928v3.964H0z"/>
-    </svg>
-    </button>
-      <div class="page-nav__wrapper display-none">
-        <nav class="page-nav__list-link">
-          <ul class="page-nav__list nav-list">
-            <li class="nav-list__item"><a href="index.html">ГЛАВНАЯ</a></li>
-            <li class="nav-list__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
-            <li class="nav-list__item nav-list__item--active"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-            <li class="nav-list__item"><a href="#">HTML ACADEMY</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <div class="page-logo">
-      <a href=""><img class="page-logo__image" src="img/logotyle-mobile-svg.png" alt="логотип  Седона"></a>
-    </div>
-  </header>
-  <main class="page-main">
-    <section class="main-promo-photo">
-      <h1 class="visually-hidden">Седона</h1>
-      <svg xmlns="http://www.w3.org/2000/svg" width="459.754" height="79.805" viewBox="0 0 459.754 79.805"
-        class="main-promo-photo__image">
-        <g fill="#FFF">
-          <path
-            d="M44.466 21.738c-3.572-2.979-8.139-4.963-12.902-4.963-3.572 0-8.338 2.084-8.338 6.253 0 4.368 5.261 6.055 8.636 7.146l4.964 1.489C47.248 34.74 55.287 40 55.287 52.11c0 7.445-1.787 15.088-7.742 20.149-5.855 4.964-13.697 7.048-21.24 7.048-9.43 0-18.661-3.177-26.305-8.537l8.338-15.683c4.865 4.269 10.621 7.742 17.271 7.742 4.566 0 9.43-2.283 9.43-7.545 0-5.459-7.643-7.345-11.812-8.535-12.208-3.475-20.249-6.648-20.249-21.142C2.978 10.419 13.796.495 28.785.495c7.543 0 16.775 2.382 23.426 6.154l-7.745 15.089zM91.831 18.959v12.506h21.937v16.479H91.831v12.899h23.127v16.479H72.376V2.483h42.582V18.96l-23.127-.001zM129.417 2.482h27.594c20.844 0 38.016 16.377 38.016 37.419 0 21.041-17.271 37.42-38.016 37.42h-27.594V2.482zm19.455 58.364h4.367c11.612 0 21.539-6.352 21.539-20.942 0-13.4-8.834-20.943-21.341-20.943h-4.565v41.885zM286.873 38.513c0 24.219-17.371 41.292-41.394 41.292-24.02 0-41.391-17.071-41.391-41.292C204.089 15.881 223.941 0 245.479 0c21.54 0 41.394 15.881 41.394 38.513zm-62.534.099c0 12.905 9.529 22.333 21.141 22.333 11.613 0 21.144-9.43 21.144-22.333 0-10.323-9.526-19.752-21.144-19.752-11.613 0-21.141 9.43-21.141 19.752zM297.238 2.482h19.454l35.636 45.757h.196V2.482h19.453v74.839h-19.453L316.89 31.465h-.197v45.856h-19.454V2.482zM407.345 64.319l-5.16 13.002h-20.646l28.785-74.839h21.242l28.188 74.839h-20.745l-4.862-13.002h-26.802zm13.6-38.71h-.199l-8.039 23.824h16.178l-7.94-23.824z" />
-        </g>
-      </svg>
-      <img src="img/intro-triangle-svg.svg" alt="Декаративный элемент" class="main-promo__image-decor">
-    </section>
-    <section class="main-feedback">
-      <div class="feedback-heading">
-        <h2 class="feedback-heading__heading">ОСТАВТЕ СВОЙ ОТЗЫВ</h2>
-        <p class="feedback-heading__advantage">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-          посещенных вами достопримечательностях</p>
-      </div>
-      <form action="https://echo.htmlacademy.ru" class="main-feedback__form" method="GET">
-        <div class="main-feedback__form-write main-feedback__form-name">
-          <h3 class="main-feedback__form-name-heading">ПРЕДСТАВЬТЕСЬ:</h3>
-          <label class="main-feedback__form-name-input  main-feedback__form-name-input--name">
-            <span class="main-feedback__form-name-input-text"> ИМЯ*:</span> <input type="text" name="firstName"
-              placeholder="Петр"
-              class="main-feedback__form-name-input-input main-feedback__form-name-input-input--name" required>
-          </label>
-          <label class="main-feedback__form-name-input--second-name main-feedback__form-name-input">
-            <span class="main-feedback__form-name-input-text main-feedback__form-name-input-input--js"> ФАМИЛИЯ*: </span> <input type="text" name="secondName"
-              placeholder="Иванов"
-              class="main-feedback__form-name-input-input main-feedback__form-name-input-input--second-name" required>
-          </label>
-          <label class="main-feedback__form-name-input main-feedback__form-name-input--patronymic">
-            <span class="main-feedback__form-name-input-text"> ОТЧЕСТВО: </span> <input type="text" name="patronymic"
-              placeholder="Александрович"
-              class="main-feedback__form-name-input-input main-feedback__form-name-input-input--patronymic">
-          </label>
-        </div>
-        <div class="main-feedback__form-write main-feedback__form-contact">
-          <h3 class="main-feedback__form-contact-heading">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
-          <label class="main-feedback__form-contact-input">
-            <span class="main-feedback__form-contact-input-text"><span class="main-feedback__form-contact-input-text--off">КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</span> <input type="text"
-              name="number" placeholder="Введите телефон" class="main-feedback__form-contact-input-input main-feedback__form-contact-input-input--nomber " required>
-            <span class="main-feedback__form-contact-input-image"> <svg xmlns="http://www.w3.org/2000/svg" width="18"
-                height="18" viewBox="0 0 18 18">
-                <path fill="#010101"
-                  d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.699-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z" />
-              </svg>
-            </span>
-          </label>
-          <label class="main-feedback__form-contact-input main-feedback__form-contact-input--email">
-            <span class=" main-feedback__form-contact-input-text main-feedback__form-contact-input-text-email "> ЭЛЕКТРОННАЯ ПОЧТА*:</span> <input type="text"
-              name="email" placeholder="Введите e-mail" class="main-feedback__form-contact-input-input main-feedback__form-contact-input-input--email " required>
-            <span class="main-feedback__form-contact-input-image main-feedback__form-contact-input-image--email">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path
-                  d="M8 10c-.266 0-.5-.094-1-.336L0 6v7c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V6L9 9.664c-.5.242-.734.336-1 .336zm7-8H1c-.55 0-1 .45-1 1v.758l8 4.205 8-4.205V3c0-.55-.45-1-1-1z" />
-              </svg>
-            </span>
-          </label>
-        </div>
-        <div class="main-feedback__form-boxes main-feedback__form-impression">
-          <legend class="main-feedback__form-impression-heading">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
-          <label class="main-feedback__form-impression-input" for="radio1"><input type="radio" name="impression"
-              id="radio1" value="radio-1" class="main-feedback__form-impression-input-input visually-hidden"><span
-              class="main-feedback__form-impression-input-image--off main-feedback__form-impression-input-image">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <circle cx="29" cy="29" r="29" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></circle>
-              </svg>
-            </span>
-            <span class="main-feedback__form-impression-input-image--on main-feedback__form-impression-input-image">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <circle cx="29" cy="29" r="29" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></circle>
-                <circle cx="29" cy="29" r="12" fill="#333333" class="main-feedback__form-impression-input-image--interactiv-on"></circle>
-              </svg>
-            </span>
-            <span class="main-feedback__form-impression-input-text">Скорее положительное</span>
-          </label>
-          <label class="main-feedback__form-impression-input main-feedback__form-impression-input-negative" for="radio2"><input type="radio" name="impression"
-              id="radio2" value="radio-2" class="main-feedback__form-impression-input-input visually-hidden">
-            <span class="main-feedback__form-impression-input-image--off main-feedback__form-impression-input-image">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <circle cx="29" cy="29" r="29" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></circle>
-              </svg>
-            </span>
-            <span class="main-feedback__form-impression-input-image--on main-feedback__form-impression-input-image ">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <circle cx="29" cy="29" r="29" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></circle>
-                <circle cx="29" cy="29" r="12" fill="#333333" class="main-feedback__form-impression-input-image--interactiv-on"></circle>
-              </svg>
-            </span>
-            <span class="main-feedback__form-impression-input-text">Скорее отрицательное</span>
-          </label>
-          <label class="main-feedback__form-impression-input main-feedback__form-impression-input-difficulty" for="radio3"><input type="radio" name="impression"
-              id="radio3" value="radio-3" class="main-feedback__form-impression-input-input visually-hidden"><span
-              class="main-feedback__form-impression-input-image--off main-feedback__form-impression-input-image">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <circle cx="29" cy="29" r="29" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></circle>
-              </svg>
-            </span>
-            <span class="main-feedback__form-impression-input-image--on main-feedback__form-impression-input-image">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <circle cx="29" cy="29" r="29" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></circle>
-                <circle cx="29" cy="29" r="12" fill="#333333" class="main-feedback__form-impression-input-image--interactiv-on"></circle>
-              </svg>
-            </span>
-            <span class="main-feedback__form-impression-input-text">Затрудняюсь ответить</span>
-          </label>
-        </div>
-        <div class="main-feedback__form-sight">
-          <h3 class="main-feedback__form-sight-heding">посещенные Достопримечательности:</h3>
-          <label class="main-feedback__form-sight-checkbox"><input type="checkbox"
-              class="main-feedback__form-sight-chekbox-input visually-hidden">
-            <span class="main-feedback__form-sight-chekbox-input--off"><svg xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewbox="0 0 58 58">
-                <rect x="0" y="0" width="58" height="58" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></rect>
-              </svg>
-            </span>
-            <span class="main-feedback__form-sight-chekbox-input--on">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <g>
-                  <rect width="58" height="58" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></rect>
-                  <path class="main-feedback__form-impression-input-image--interactiv-on" transform="translate(18, 20)"
-                    d="M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z" />
-                </g>
-              </svg>
-            </span>
-            <span class="main-feedback__form-sight-chekbox-text">Мост Дьявола</span>
-          </label>
-          <label class="main-feedback__form-sight-checkbox"><input type="checkbox"
-              class="main-feedback__form-sight-chekbox-input visually-hidden">
-            <span class="main-feedback__form-sight-chekbox-input--off">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <rect x="0" y="0" width="58" height="58" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></rect>
-              </svg>
-            </span>
-            <span class="main-feedback__form-sight-chekbox-input--on">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <g>
-                  <rect width="58" height="58" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></rect>
-                  <path class="main-feedback__form-impression-input-image--interactiv-on" transform="translate(18, 20)"
-                    d="M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z" />
-                </g>
-              </svg>
-            </span>
-            <span class="main-feedback__form-sight-chekbox-text">Гора-Колокол</span>
-          </label>
-          <label class="main-feedback__form-sight-checkbox"><input type="checkbox"
-              class="main-feedback__form-sight-chekbox-input visually-hidden">
-            <span class="main-feedback__form-sight-chekbox-input--off">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <rect x="0" y="0" width="58" height="58" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></rect>
-              </svg>
-            </span>
-            <span class="main-feedback__form-sight-chekbox-input--on">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <g>
-                  <rect width="58" height="58" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></rect>
-                  <path class="main-feedback__form-impression-input-image--interactiv-on" transform="translate(18, 20)"
-                    d="M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z" />
-                </g>
-              </svg>
-            </span>
-            <span class="main-feedback__form-sight-chekbox-text">Слайд-парк</span>
-          </label>
-          <label class="main-feedback__form-sight-checkbox"><input type="checkbox"
-              class="main-feedback__form-sight-chekbox-input visually-hidden">
-            <span class="main-feedback__form-sight-chekbox-input--off">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <rect x="0" y="0" width="58" height="58" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></rect>
-              </svg>
-            </span>
-            <span class="main-feedback__form-sight-chekbox-input--on">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
-                viewbox="0 0 58 58">
-                <g>
-                  <rect width="58" height="58" fill="#f2f2f2" class="main-feedback__form-impression-input-image--interactiv"></rect>
-                  <path class="main-feedback__form-impression-input-image--interactiv-on" transform="translate(18, 20)"
-                    d="M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z" />
-                </g>
-              </svg>
-            </span>
-            <span class="main-feedback__form-sight-chekbox-text">Красные скалы</span>
-          </label>
-        </div>
-        <div class="main-feedback__form-emotions">
-          <h3 class="main-feedback__form-emotions-heading">Опишите свои эмоции:</h3>
-          <textarea name="emotions" class="main-feedback__form-emotions-textarea"
-            placeholder="Опишите подробно все свои восторги "></textarea>
-        </div>
-        <div class="main-feedback__required-input">* — обязательные поля</div>
-        <button type="submit" class="main-feedback__form-submit">ОТПРАВИТЬ ОТЗЫВ</button>
-
-      </form>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <h2 class="page-footer__tag">#VISITSEDONA</h2>
-    <ul class="page-footer__socal">
-      <li class="page-footer__socal-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17.5"
-            height="14.663" viewBox="0 0 17.5 14.663" class="page-footer__socal-item-images">
-            <path fill-rule="evenodd"
-              d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"
-              clip-rule="evenodd" />
-          </svg>
-        </a></li>
-      <li class="page-footer__socal-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8.672"
-            height="18.944" viewBox="0 0 8.672 18.944" class="page-footer__socal-item-images">
+    <header class="page-header">
+      <section class="page-nav">
+        <button type="button" class="page-nav__button--on"><svg xmlns="http://www.w3.org/2000/svg" width="22.199"
+            height="22.199" viewBox="0 0 22.199 22.199">
             <path
-              d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z" />
-          </svg></a></li>
-      <li class="page-footer__socal-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="19.979"
-            height="14.015" viewBox="0 0 19.979 14.015" class="page-footer__socal-item-images">
-            <path
-              d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z" />
+              d="M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z" />
           </svg>
-        </a></li>
-    </ul>
-    <div class="page-footer__developed">
-      <h3 class="page-footer__developed-heading">Разработано</h3>
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"
-          class="page-footer__developed-images">
-          <path
-            d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+        </button>
+        <button type="button" class="page-nav__button page-nav__button--off display-none"> <svg
+            xmlns="http://www.w3.org/2000/svg" width="22.928" height="21.982" viewBox="0 0 22.928 21.982">
+            <path d="M0 0h22.928v3.964H0zM0 9.009h22.928v3.964H0zM0 18.018h22.928v3.964H0z" />
+          </svg>
+        </button>
+        <div class="page-nav__wrapper ">
+          <nav class="page-nav__list-link">
+            <ul class="page-nav__list nav-list">
+              <li class="nav-list__item"><a href="index.html">ГЛАВНАЯ</a></li>
+              <li class="nav-list__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
+              <li class="nav-list__item nav-list__item--active"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
+              <li class="nav-list__item"><a href="#">HTML ACADEMY</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <div class="page-logo">
+        <a href="index.html">
+          <picture>
+            <source type="image/webp" media="(min-width:1200px)"
+              srcset="img/logotype-desktop-svg.webp 1x, img/logotype-desktop-svg@2x.webp 2x">
+            <source type="image/webp" srcset="img/logotyle-mobile-svg.webp 1x, img/logotyle-mobile-svg@2x.webp 2x">
+            <source srcset="img/logotyle-mobile-svg.png 1x, img/logotyle-mobile-svg@2x.png 2x">
+            <img class="page-logo__image" src="img/logotyle-mobile-svg.png" alt="логотип Седона">
+          </picture>
+        </a>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="main-promo-photo">
+        <h1 class="visually-hidden">Седона</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="459.754" height="79.805" viewBox="0 0 459.754 79.805"
+          class="main-promo-photo__image">
+          <g fill="#FFF">
+            <path
+              d="M44.466 21.738c-3.572-2.979-8.139-4.963-12.902-4.963-3.572 0-8.338 2.084-8.338 6.253 0 4.368 5.261 6.055 8.636 7.146l4.964 1.489C47.248 34.74 55.287 40 55.287 52.11c0 7.445-1.787 15.088-7.742 20.149-5.855 4.964-13.697 7.048-21.24 7.048-9.43 0-18.661-3.177-26.305-8.537l8.338-15.683c4.865 4.269 10.621 7.742 17.271 7.742 4.566 0 9.43-2.283 9.43-7.545 0-5.459-7.643-7.345-11.812-8.535-12.208-3.475-20.249-6.648-20.249-21.142C2.978 10.419 13.796.495 28.785.495c7.543 0 16.775 2.382 23.426 6.154l-7.745 15.089zM91.831 18.959v12.506h21.937v16.479H91.831v12.899h23.127v16.479H72.376V2.483h42.582V18.96l-23.127-.001zM129.417 2.482h27.594c20.844 0 38.016 16.377 38.016 37.419 0 21.041-17.271 37.42-38.016 37.42h-27.594V2.482zm19.455 58.364h4.367c11.612 0 21.539-6.352 21.539-20.942 0-13.4-8.834-20.943-21.341-20.943h-4.565v41.885zM286.873 38.513c0 24.219-17.371 41.292-41.394 41.292-24.02 0-41.391-17.071-41.391-41.292C204.089 15.881 223.941 0 245.479 0c21.54 0 41.394 15.881 41.394 38.513zm-62.534.099c0 12.905 9.529 22.333 21.141 22.333 11.613 0 21.144-9.43 21.144-22.333 0-10.323-9.526-19.752-21.144-19.752-11.613 0-21.141 9.43-21.141 19.752zM297.238 2.482h19.454l35.636 45.757h.196V2.482h19.453v74.839h-19.453L316.89 31.465h-.197v45.856h-19.454V2.482zM407.345 64.319l-5.16 13.002h-20.646l28.785-74.839h21.242l28.188 74.839h-20.745l-4.862-13.002h-26.802zm13.6-38.71h-.199l-8.039 23.824h16.178l-7.94-23.824z" />
+          </g>
         </svg>
-      </a>
-    </div>
-  </footer>
+        <img src="img/intro-triangle-svg.svg" alt="Декаративный элемент" class="main-promo__image-decor">
+      </section>
+      <section class="main-feedback">
+        <div class="feedback-heading">
+          <h2 class="feedback-heading__heading">ОСТАВТЕ СВОЙ ОТЗЫВ</h2>
+          <p class="feedback-heading__advantage">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях</p>
+        </div>
+        <form action="https://echo.htmlacademy.ru" class="main-feedback__form" method="GET">
+          <div class="main-feedback__form-write main-feedback__form-name">
+            <h3 class="main-feedback__form-name-heading">ПРЕДСТАВЬТЕСЬ:</h3>
+            <label class="main-feedback__form-name-input  main-feedback__form-name-input--name">
+              <span class="main-feedback__form-name-input-text"> ИМЯ*:</span> <input type="text" name="firstName"
+                placeholder="Петр"
+                class="main-feedback__form-name-input-input main-feedback__form-name-input-input--name" required>
+            </label>
+            <label class="main-feedback__form-name-input--second-name main-feedback__form-name-input">
+              <span class="main-feedback__form-name-input-text main-feedback__form-name-input-input--js"> ФАМИЛИЯ*:
+              </span> <input type="text" name="secondName" placeholder="Иванов"
+                class="main-feedback__form-name-input-input main-feedback__form-name-input-input--second-name" required>
+            </label>
+            <label class="main-feedback__form-name-input main-feedback__form-name-input--patronymic">
+              <span class="main-feedback__form-name-input-text"> ОТЧЕСТВО: </span> <input type="text" name="patronymic"
+                placeholder="Александрович"
+                class="main-feedback__form-name-input-input main-feedback__form-name-input-input--patronymic">
+            </label>
+          </div>
+          <div class="main-feedback__form-write main-feedback__form-contact">
+            <h3 class="main-feedback__form-contact-heading">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
+            <label class="main-feedback__form-contact-input">
+              <span class="main-feedback__form-contact-input-text"><span
+                  class="main-feedback__form-contact-input-text--off">КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</span> <input
+                type="text" name="number" placeholder="Введите телефон"
+                class="main-feedback__form-contact-input-input main-feedback__form-contact-input-input--nomber "
+                required>
+              <span class="main-feedback__form-contact-input-image"> <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                  height="18" viewBox="0 0 18 18">
+                  <path fill="#010101"
+                    d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.699-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z" />
+                </svg>
+              </span>
+            </label>
+            <label class="main-feedback__form-contact-input main-feedback__form-contact-input--email">
+              <span class=" main-feedback__form-contact-input-text main-feedback__form-contact-input-text-email ">
+                ЭЛЕКТРОННАЯ ПОЧТА*:</span> <input type="text" name="email" placeholder="Введите e-mail"
+                class="main-feedback__form-contact-input-input main-feedback__form-contact-input-input--email "
+                required>
+              <span class="main-feedback__form-contact-input-image main-feedback__form-contact-input-image--email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                  <path
+                    d="M8 10c-.266 0-.5-.094-1-.336L0 6v7c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V6L9 9.664c-.5.242-.734.336-1 .336zm7-8H1c-.55 0-1 .45-1 1v.758l8 4.205 8-4.205V3c0-.55-.45-1-1-1z" />
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="main-feedback__form-boxes main-feedback__form-impression">
+            <span class="main-feedback__form-impression-heading">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</span>
+            <label class="main-feedback__form-impression-input" for="radio1"><input type="radio" name="impression"
+                id="radio1" value="radio-1" class="main-feedback__form-impression-input-input visually-hidden"><span
+                class="main-feedback__form-impression-input-image--off main-feedback__form-impression-input-image">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <circle cx="29" cy="29" r="29" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></circle>
+                </svg>
+              </span>
+              <span class="main-feedback__form-impression-input-image--on main-feedback__form-impression-input-image">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <circle cx="29" cy="29" r="29" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></circle>
+                  <circle cx="29" cy="29" r="12" fill="#333333"
+                    class="main-feedback__form-impression-input-image--interactiv-on"></circle>
+                </svg>
+              </span>
+              <span class="main-feedback__form-impression-input-text">Скорее положительное</span>
+            </label>
+            <label class="main-feedback__form-impression-input main-feedback__form-impression-input-negative"
+              for="radio2"><input type="radio" name="impression" id="radio2" value="radio-2"
+                class="main-feedback__form-impression-input-input visually-hidden">
+              <span class="main-feedback__form-impression-input-image--off main-feedback__form-impression-input-image">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <circle cx="29" cy="29" r="29" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></circle>
+                </svg>
+              </span>
+              <span class="main-feedback__form-impression-input-image--on main-feedback__form-impression-input-image ">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <circle cx="29" cy="29" r="29" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></circle>
+                  <circle cx="29" cy="29" r="12" fill="#333333"
+                    class="main-feedback__form-impression-input-image--interactiv-on"></circle>
+                </svg>
+              </span>
+              <span class="main-feedback__form-impression-input-text">Скорее отрицательное</span>
+            </label>
+            <label class="main-feedback__form-impression-input main-feedback__form-impression-input-difficulty"
+              for="radio3"><input type="radio" name="impression" id="radio3" value="radio-3"
+                class="main-feedback__form-impression-input-input visually-hidden"><span
+                class="main-feedback__form-impression-input-image--off main-feedback__form-impression-input-image">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <circle cx="29" cy="29" r="29" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></circle>
+                </svg>
+              </span>
+              <span class="main-feedback__form-impression-input-image--on main-feedback__form-impression-input-image">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <circle cx="29" cy="29" r="29" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></circle>
+                  <circle cx="29" cy="29" r="12" fill="#333333"
+                    class="main-feedback__form-impression-input-image--interactiv-on"></circle>
+                </svg>
+              </span>
+              <span class="main-feedback__form-impression-input-text">Затрудняюсь ответить</span>
+            </label>
+          </div>
+          <div class="main-feedback__form-sight">
+            <h3 class="main-feedback__form-sight-heding">посещенные Достопримечательности:</h3>
+            <label class="main-feedback__form-sight-checkbox"><input type="checkbox"
+                class="main-feedback__form-sight-chekbox-input visually-hidden">
+              <span class="main-feedback__form-sight-chekbox-input--off"><svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewbox="0 0 58 58">
+                  <rect x="0" y="0" width="58" height="58" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></rect>
+                </svg>
+              </span>
+              <span class="main-feedback__form-sight-chekbox-input--on">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <g>
+                    <rect width="58" height="58" fill="#f2f2f2"
+                      class="main-feedback__form-impression-input-image--interactiv"></rect>
+                    <path class="main-feedback__form-impression-input-image--interactiv-on"
+                      transform="translate(18, 20)"
+                      d="M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z" />
+                  </g>
+                </svg>
+              </span>
+              <span class="main-feedback__form-sight-chekbox-text">Мост Дьявола</span>
+            </label>
+            <label class="main-feedback__form-sight-checkbox"><input type="checkbox"
+                class="main-feedback__form-sight-chekbox-input visually-hidden">
+              <span class="main-feedback__form-sight-chekbox-input--off">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <rect x="0" y="0" width="58" height="58" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></rect>
+                </svg>
+              </span>
+              <span class="main-feedback__form-sight-chekbox-input--on">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <g>
+                    <rect width="58" height="58" fill="#f2f2f2"
+                      class="main-feedback__form-impression-input-image--interactiv"></rect>
+                    <path class="main-feedback__form-impression-input-image--interactiv-on"
+                      transform="translate(18, 20)"
+                      d="M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z" />
+                  </g>
+                </svg>
+              </span>
+              <span class="main-feedback__form-sight-chekbox-text">Гора-Колокол</span>
+            </label>
+            <label class="main-feedback__form-sight-checkbox"><input type="checkbox"
+                class="main-feedback__form-sight-chekbox-input visually-hidden">
+              <span class="main-feedback__form-sight-chekbox-input--off">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <rect x="0" y="0" width="58" height="58" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></rect>
+                </svg>
+              </span>
+              <span class="main-feedback__form-sight-chekbox-input--on">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <g>
+                    <rect width="58" height="58" fill="#f2f2f2"
+                      class="main-feedback__form-impression-input-image--interactiv"></rect>
+                    <path class="main-feedback__form-impression-input-image--interactiv-on"
+                      transform="translate(18, 20)"
+                      d="M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z" />
+                  </g>
+                </svg>
+              </span>
+              <span class="main-feedback__form-sight-chekbox-text">Слайд-парк</span>
+            </label>
+            <label class="main-feedback__form-sight-checkbox"><input type="checkbox"
+                class="main-feedback__form-sight-chekbox-input visually-hidden">
+              <span class="main-feedback__form-sight-chekbox-input--off">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <rect x="0" y="0" width="58" height="58" fill="#f2f2f2"
+                    class="main-feedback__form-impression-input-image--interactiv"></rect>
+                </svg>
+              </span>
+              <span class="main-feedback__form-sight-chekbox-input--on">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                  height="58" viewbox="0 0 58 58">
+                  <g>
+                    <rect width="58" height="58" fill="#f2f2f2"
+                      class="main-feedback__form-impression-input-image--interactiv"></rect>
+                    <path class="main-feedback__form-impression-input-image--interactiv-on"
+                      transform="translate(18, 20)"
+                      d="M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z" />
+                  </g>
+                </svg>
+              </span>
+              <span class="main-feedback__form-sight-chekbox-text">Красные скалы</span>
+            </label>
+          </div>
+          <div class="main-feedback__form-emotions">
+            <h3 class="main-feedback__form-emotions-heading">Опишите свои эмоции:</h3>
+            <textarea name="emotions" class="main-feedback__form-emotions-textarea"
+              placeholder="Опишите подробно все свои восторги "></textarea>
+          </div>
+          <div class="main-feedback__required-input">* — обязательные поля</div>
+          <button type="submit" class="main-feedback__form-submit">ОТПРАВИТЬ ОТЗЫВ</button>
+
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <h2 class="page-footer__tag">#VISITSEDONA</h2>
+      <ul class="page-footer__socal">
+        <li class="page-footer__socal-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17.5"
+              height="14.663" viewBox="0 0 17.5 14.663" class="page-footer__socal-item-images">
+              <path fill-rule="evenodd"
+                d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"
+                clip-rule="evenodd" />
+            </svg>
+          </a></li>
+        <li class="page-footer__socal-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8.672"
+              height="18.944" viewBox="0 0 8.672 18.944" class="page-footer__socal-item-images">
+              <path
+                d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z" />
+            </svg></a></li>
+        <li class="page-footer__socal-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="19.979"
+              height="14.015" viewBox="0 0 19.979 14.015" class="page-footer__socal-item-images">
+              <path
+                d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z" />
+            </svg>
+          </a></li>
+      </ul>
+      <div class="page-footer__developed">
+        <h3 class="page-footer__developed-heading">Разработано</h3>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"
+            class="page-footer__developed-images">
+            <path
+              d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+          </svg>
+        </a>
+      </div>
+    </footer>
   </div>
   <div class="modal-confirm modal-off">
     <h3 class="modal-confirm__heading">Ваш отзыв отправлен!</h3>
-      <p class="modal-confirm__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-        В ближайшее время мы опубликуем его на сайте.</p>
-        <div class="modal-confirm__button"><button type="button" class="modal-confirm__button-button">ЗАКРЫТЬ ОКНО</button></div>
+    <p class="modal-confirm__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте.</p>
+    <div class="modal-confirm__button"><button type="button" class="modal-confirm__button-button">ЗАКРЫТЬ ОКНО</button>
+    </div>
   </div>
   <div class="modal-error modal-off">
     <h3 class="modal-error__heading">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>

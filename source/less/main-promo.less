@@ -5,7 +5,7 @@
   width: 100%;
   overflow: hidden;
   background-image: url("../img/back-mobile-jpg.jpg");
-  margin-top: -28px;
+  margin-top: -34px;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: flex-start;
@@ -17,9 +17,11 @@
 
 .main-promo__image-decor {
   position: absolute;
+  left: 50%;
   bottom: -1px;
-  width: 100%;
+  width: 200%;
   overflow: hidden;
+  transform: translate(-50%);
 }
 
 @media (min-width: 768px) {
@@ -41,7 +43,11 @@
   }
 
   .main-promo__image-decor {
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    width: 156%;
     overflow: hidden;
+    transform: translate(-50%);
   }
 }
