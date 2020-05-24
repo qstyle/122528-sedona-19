@@ -70,15 +70,6 @@ gulp.task('webp', function () {
     .pipe(gulp.dest((file) => file.base))
 });
 
-gulp.task('sprite', function () {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
-});
-
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     // .pipe(posthtml([include()]))
@@ -97,5 +88,5 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css","html"));
 gulp.task("start", gulp.series("build", "server"));
