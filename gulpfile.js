@@ -83,12 +83,11 @@ gulp.task("copy", function () {
       "source/js/**",
       "source/*.ico",
       "source/css/**",
-      
     ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series("clean","css", "copy","html",  ));
+gulp.task("build", gulp.series("clean", "css", "copy", "html", ));
 gulp.task("start", gulp.series("build", "server"));
