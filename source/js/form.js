@@ -1,14 +1,14 @@
-const FORM_CLASS = ".main-feedback__form"
+const FORM_CLASS = '.main-feedback__form'
 const form = document.querySelector(FORM_CLASS)
 
-const inputName = form.querySelector(".main-feedback__form-name-input-input--name")
-const inputSecondName = form.querySelector(".main-feedback__form-name-input-input--second-name")
-const inputNumber = form.querySelector(".main-feedback__form-contact-input-input--nomber")
-const inputEmail = form.querySelector(".main-feedback__form-contact-input-input--email")
-const modalError = document.querySelector(".modal-error");
-const modalConfirm = document.querySelector(".modal-confirm");
-const confirmBtn = document.querySelector(".modal-confirm__button-button");
-const errorBtn =  document.querySelector(".modal-error__button");
+const inputName = form.querySelector('.main-feedback__form-name-input-input--name')
+const inputSecondName = form.querySelector('.main-feedback__form-name-input-input--second-name')
+const inputNumber = form.querySelector('.main-feedback__form-contact-input-input--nomber')
+const inputEmail = form.querySelector('.main-feedback__form-contact-input-input--email')
+const modalError = document.querySelector('.modal-error');
+const modalConfirm = document.querySelector('.modal-confirm');
+const confirmBtn = document.querySelector('.modal-confirm__button-button');
+const errorBtn =  document.querySelector('.modal-error__button');
 
 form.setAttribute('novalidate', 'novalidate')
 form.addEventListener('submit', handleSubmit)
@@ -48,9 +48,9 @@ function handleSubmit(event) {
 }
 confirmBtn.addEventListener('click', function(event) {
     event.preventDefault();
-    modalConfirm.classList.add("modal-off");
+    modalConfirm.classList.add('modal-off');
 });
 errorBtn.addEventListener('click', function(event) {
     event.preventDefault();
-    modalError.classList.add("modal-off");
+    modalError.classList.add('modal-off');
 });
