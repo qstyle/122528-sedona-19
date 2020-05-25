@@ -1,8 +1,8 @@
-const DISPLAY_NONE = "display-none";
+const DISPLAY_NONE = 'display-none';
 
-const menu = document.querySelector(".page-nav__wrapper");
-const closeButton = document.querySelector(".page-nav__button--on");
-const openButton = document.querySelector(".page-nav__button--off");
+const menu = document.querySelector('.page-nav__wrapper');
+const closeButton = document.querySelector('.page-nav__button--on');
+const openButton = document.querySelector('.page-nav__button--off');
 
 openButton.addEventListener('click', function (event) {
   event.preventDefault();
