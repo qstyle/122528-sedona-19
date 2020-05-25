@@ -11,6 +11,15 @@
   background-position: 20% 50%;
 }
 
+.main-promo-photo__image-mask {
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 200%;
+  overflow: hidden;
+  transform: translate(-50%);
+}
+
 .main-promo-photo__image {
   width: 229px;
   height: auto;
@@ -29,7 +38,7 @@
     min-height: 317px;
   }
 
-  .main-promo__image-decor {
+  .main-promo-photo__image-mask {
     position: absolute;
     left: 50%;
     bottom: -1px;
@@ -48,7 +57,7 @@
   }
 
   @media (min-width: 1200px) {
-    .main-promo__image-decor {
+    .main-promo-photo__image-mask {
       width: 100%;
     }
   }

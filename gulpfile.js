@@ -31,7 +31,7 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.mini.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -82,11 +82,13 @@ gulp.task("copy", function () {
       "source/img/**",
       "source/js/**",
       "source/*.ico",
+      "source/css/**",
+      
     ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css","html"));
+gulp.task("build", gulp.series("clean","css", "copy","html",  ));
 gulp.task("start", gulp.series("build", "server"));
